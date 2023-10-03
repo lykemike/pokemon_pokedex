@@ -23,7 +23,7 @@ const fetchPokemon = async (region: string) => {
   // await new Promise((resolve) => setTimeout(resolve, 1000));
   try {
     const pokeapi = await fetch(
-      `${process.env.NEXT_PUBLIC_BASE_URL}/api/region/${region}`,
+      `${process.env.NEXT_PUBLIC_BASE_API_URL}/api/region/${region}`,
       {
         method: 'GET',
       }
