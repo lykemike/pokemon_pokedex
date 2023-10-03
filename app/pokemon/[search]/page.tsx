@@ -23,7 +23,7 @@ const searchPokemon = async (query: string) => {
   await new Promise((resolve) => setTimeout(resolve, 1000));
   try {
     const pokeapi = await fetch(
-      `${process.env.BASE_URL}/api/pokemon/${query}`,
+      `${process.env.NEXT_PUBLIC_BASE_URL}/api/pokemon/${query}`,
       {
         method: 'GET',
         headers: {
